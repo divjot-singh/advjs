@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advanced Javascript</title>
+	<script type="text/javascript">
+		(function(){ alert("Hello World");})();
+		var checkmail=function (email){
+							var pat=/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+							if( pat.test(email))
+							{
+								return true;
+							}
+							else
+							{ 	
+								return false;
+							}
+						};
+		(function(){ 
+			var email=prompt("Enter the email:");
+			var check=checkmail(email);
+			if(check==true)
+				alert("Valid email address");
+			else
+				alert("Invalid email address");
+		})();		
+	</script>
+</head>
+<body>
+</body>
+</html>
